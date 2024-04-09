@@ -4,7 +4,7 @@ from sqlalchemy import create_engine, URL
 from sqlalchemy import Column, Integer, Row, String, create_engine, select
 from sqlalchemy.engine import Row
 
-driver = 'ODBC Driver 17 for SQL Server'
+driver = 'ODBC Driver 18 for SQL Server'
 server = ''
 database = ''
 username = ''
@@ -49,8 +49,8 @@ db_url = URL.create(
 
 engine = create_engine(db_url)
 
-table_name = 'isp_reserve_requirements_test'
-schema_name = 'STT'
+table_name = ''
+schema_name = ''
 
 df.to_sql(table_name, con=engine, schema=schema_name, if_exists='append', index=False)
 
