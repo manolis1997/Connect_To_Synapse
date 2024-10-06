@@ -13,7 +13,7 @@ password = ''
 conn_str = f'DRIVER={driver};SERVER={server};DATABASE={database};UID={username};PWD={password}'
 conn = pyodbc.connect(conn_str)
 
-####################### SELECT
+####################### SELECT #######################
 sql_query = """
 SELECT bidding_zone_id,provider_id,CAST(issue_date AS varchar(255)) AS issue_date
 FROM STT.load_forecasts
@@ -21,7 +21,7 @@ FROM STT.load_forecasts
 df = pd.read_sql(sql_query, conn)
 print(df.to_string())
 
-####################### INSERT
+####################### INSERT #######################
 data = {
     'datetime_from': ['2000-03-22 00:00:00+01:00'],
     'value': ['53'],
