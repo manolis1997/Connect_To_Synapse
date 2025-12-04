@@ -6,6 +6,7 @@ from sqlalchemy.engine import Row
 
 # Test Comment
 
+
 driver = 'ODBC Driver 18 for SQL Server'
 server = ''
 database = ''
@@ -16,6 +17,7 @@ conn_str = f'DRIVER={driver};SERVER={server};DATABASE={database};UID={username};
 conn = pyodbc.connect(conn_str)
 
 ################# SELECT #
+
 
 sql_query = """
 SELECT bidding_zone_id,provider_id,CAST(issue_date AS varchar(255)) AS issue_date
