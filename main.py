@@ -27,13 +27,13 @@ print(df.to_string())
 ################# INSERT #
 
 data = {
-    'datetime_from': ['2000-03-22 00:00:00+01:00'],
+    'datetime_from': ['2025-03-22 00:00:00+01:00'],
     'value': ['53'],
     'tag': ['ISP1 Results'],
     'bidding_zone_id': ['1'],
     'duration': ['00:30:00'],
     'issue_date': ['2024-03-21 17:20:00+0100'],
-    'registration_date': ['2024-03-22 16:46:36+0100'],
+    'registration_date': ['2026-03-22 16:46:36+0100'],
     'reserve_direction': ['up'],
     'reserve_type': ['FCR'],
     'provider_id': ['4']
